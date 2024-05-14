@@ -8,14 +8,12 @@ class SinhVien(val hoTen: String, val tuoi: Int, val lop: String) {
     }
 }
 
-// Yêu cầu 2: Xây dựng lớp TheMuon để quản lý việc mượn trả sách của các sinh viên.
 class TheMuon(val maPhieuMuon: String, val ngayMuon: LocalDate, val hanTra: LocalDate, val soHieuSach: String, val sinhVien: SinhVien) {
     override fun toString(): String {
         return "Mã phiếu mượn: $maPhieuMuon, Ngày mượn: $ngayMuon, Hạn trả: $hanTra, Số hiệu sách: $soHieuSach, Thông tin sinh viên: $sinhVien"
     }
 }
 
-// Yêu cầu 3: Xây dựng các phương thức: Thêm, xoá theo mã phiếu mượn và hiển thị thông tin các thẻ mượn.
 class QuanLyTheMuon {
     private val danhSachTheMuon = mutableListOf<TheMuon>()
 

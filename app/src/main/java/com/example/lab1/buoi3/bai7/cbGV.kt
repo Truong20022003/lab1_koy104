@@ -31,6 +31,7 @@ class QuanLyCBGV {
                  luongCung: Float, luongThuong: Float, tienPhat: Float) {
         val cbgv = CBGV(hoTen, tuoi, queQuan, maSoGV, luongCung, luongThuong, tienPhat)
         danhSachCBGV.add(cbgv)
+
     }
 
     fun xoaCBGV(maSoGV: String) {
